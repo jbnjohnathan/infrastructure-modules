@@ -2,6 +2,11 @@ terraform {
   # Intentionally empty. Will be filled by Terragrunt.
   backend "gcs" {}
 }
+
+provider "google" {
+  project = var.project_id
+}
+
 #Permissions needed
 # Project Creator (org level)
 # Project Deletion? (org level)
