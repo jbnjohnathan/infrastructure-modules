@@ -1,4 +1,7 @@
-
+terraform {
+  # Intentionally empty. Will be filled by Terragrunt.
+  backend "gcs" {}
+}
 #Permissions needed
 # Project Creator (org level)
 # Project Deletion? (org level)
