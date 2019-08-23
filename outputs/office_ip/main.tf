@@ -17,5 +17,5 @@ locals {
 
 output "office_networks" {
   value       = flatten([for office in local.office_networks: office.network])
-  description = "Netent office networks"
+  description = "Office networks"
 }
